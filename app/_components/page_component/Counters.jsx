@@ -4,11 +4,9 @@ import RowAndColumnSpacing from '../special_component/small_card'
 function Counters() {
   return (
 
-    <div className='py-4 '> 
-    <h1 className='text-2xl font-bold text-gray-900 sm:text-4xl mb-6'> What Are You Looking For ? </h1>
+    <div className='py-4'> 
+    <h1 className='text-2xl font-bold text-gray-900 sm:text-4xl mb-6'> What Are You Looking For... ?  </h1>
     <RowAndColumnSpacing/> </div>
-   
-   
    )
 }
 
