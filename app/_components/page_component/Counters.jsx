@@ -1,5 +1,5 @@
 
-import RowAndColumnSpacing from '../special_component/small_card'
+import RowAndColumnSpacing from '../special_component/icon_card'
 
 function Counters() {
   return (
