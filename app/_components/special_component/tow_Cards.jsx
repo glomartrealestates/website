@@ -6,9 +6,9 @@ import { Avatar, Stack, Typography } from "@mui/material";
 
 export default function TowCards() {
   return (
-    <Box sx={{ width: "100%", height: "100%", mt: 5 }}>
+    <Box className="px-3  sm:px-0" sx={{ width: "100%", height: "100%", mt: 5 }}>
       <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
-        <Grid size={6}>
+        <Grid  size={{ xs: 12, sm: 12, md: 6 }}>
           <Link href={"/"}>
             <Paper
               className="align-center text-start flex flex-col justify-center items-start
@@ -38,7 +38,7 @@ export default function TowCards() {
             </Paper>
           </Link>
         </Grid>
-        <Grid size={6}>
+        <Grid size={{ xs: 12, sm: 12, md: 6 }}>
           <Link href={"/"}>
             <Paper
               className="align-center text-start flex flex-col justify-center items-start

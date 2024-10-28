@@ -10,7 +10,7 @@ function Hero() {
 */}
 
 <section
-  className="w-[full] h-[400px]  bg-[url(https://realestate.eg/ckfinder/userfiles/images/Mivida/Mivida-Emaar%20Misr.jpg)] bg-cover bg-center bg-no-repeat items-center justify-center"
+  className="w-[full] sm:h-[400px]  bg-[url(https://realestate.eg/ckfinder/userfiles/images/Mivida/Mivida-Emaar%20Misr.jpg)] bg-cover bg-center bg-no-repeat items-center justify-center"
 >
   {/* <div
     className="  bg-gray-900/75 sm:bg-transparent sm:from-gray-900/95 sm:to-gray-900/25 ltr:sm:bg-gradient-to-r rtl:sm:bg-gradient-to-l"

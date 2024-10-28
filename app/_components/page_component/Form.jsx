@@ -7,8 +7,8 @@ export default function MyForm() {
   const options = ["The Godfather", "Pulp Fiction"];
 
   return (
-    <div className="flex items-center justify-center my-20 ">
-      <div className=" flex w-1/2 flex-col items-center justify-center bg-gray-200 rounded-2xl p-6">
+    <div className="flex items-center justify-center my-20 sm:px-0 px-3  ">
+      <div className=" flex w-full sm:w-1/2 flex-col items-center justify-center bg-gray-200 rounded-2xl p-6">
         <svg
           width="80px"
           height="80px"
@@ -113,16 +113,19 @@ export default function MyForm() {
           you.
         </p>
         <Box
-          component="form"
-          sx={{ "& > :not(style)": { m: 1, width: "55ch" } }}
+          className="w-4/5"
+          // component="form"
+          // sx={{ "& > :not(style)": { m: 1, width: "55ch" } }}
           noValidate
+          // sx={{ width: "full" }}
+
           autoComplete="off"
         >
           <h1 className=" font-bold text-gray-900 mb-1  ">Name</h1>
           <TextField
             id="outlined-basic"
             label="Name"
-            className="w-full mx-2"
+            className="w-full"
             sx={{ bgcolor: "white", borderRadius: 4 }}
           />
           <h1 className=" font-bold text-gray-900 mb-1 ">Location</h1>
@@ -132,24 +135,24 @@ export default function MyForm() {
           <h1 className=" font-bold text-gray-900 mb-1 ">Message</h1>
           <TextField
             label="Message"
+            className="w-full"
             multiline
             rows={4}
             sx={{ bgcolor: "white", borderRadius: 4 }}
           />
+          <Button
+            type="submit"
+            sx={{
+              borderRadius: 2,
+              display: "block",
+              mt: 2,
+            }}
+            className="w-full"
+            variant="contained"
+          >
+            submit
+          </Button>
         </Box>
-        <Button
-          type="submit"
-          sx={{
-            borderRadius: 2,
-            display: "block",
-            width: "470px",
-            mt: 2,
-            mr: 3,
-          }}
-          variant="contained"
-        >
-          submit
-        </Button>
       </div>
     </div>
   );

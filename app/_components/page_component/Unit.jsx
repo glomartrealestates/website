@@ -7,7 +7,7 @@ import { Avatar } from "@mui/material";
 export default function Unit() {
   return (
 
-    <Box sx={{ width: "100%", height: "100%" }}>
+    <Box className="px-3  sm:px-0" sx={{ width: "100%", height: "100%" }}>
       <h1 className="text-2xl font-bold text-gray-900 sm:text-4xl mb-2">Top Areas</h1>
       <p className="text-large text-gray-900  mb-6">29 Results Available </p>
       <Grid
@@ -16,7 +16,7 @@ export default function Unit() {
         columnSpacing={{ xs: 1, sm: 2, md: 3 }}
         className="my-6"
       >
-        <Grid size={3}>
+        <Grid size={{ xs: 6, sm: 6, md: 3 }}>
           <Link href={"/"}>
             <Paper
               className="align-center text-center flex flex-col justify-center items-center border-slate-500 border-solid border-2 rounded-2xl "
@@ -34,7 +34,7 @@ export default function Unit() {
             </Paper>
           </Link>
         </Grid>
-        <Grid size={3}>
+        <Grid  size={{ xs: 6, sm: 6, md: 3 }}>
           <Link href={"/"}>
             <Paper
               className="align-center text-center flex flex-col justify-center items-center border-slate-500 border-solid border-2 rounded-2xl "
@@ -52,7 +52,7 @@ export default function Unit() {
             </Paper>
           </Link>
         </Grid>
-        <Grid size={3}>
+        <Grid  size={{ xs: 6, sm: 6, md: 3 }}>
           <Link href={"/"}>
             <Paper
               className="align-center text-center flex flex-col justify-center items-center border-slate-500 border-solid border-2 rounded-2xl "
@@ -70,7 +70,7 @@ export default function Unit() {
             </Paper>
           </Link>
         </Grid>
-        <Grid size={3}>
+        <Grid  size={{ xs: 6, sm: 6, md: 3 }}>
           <Link href={"/"}>
             <Paper
               className="align-center text-center flex flex-col justify-center items-center border-slate-500 border-solid border-2 rounded-2xl "
@@ -89,7 +89,7 @@ export default function Unit() {
           </Link>
         </Grid>
       </Grid>
-      <Grid
+      <Grid display={{ xs: "none", sm: "none", md: "flex" }}
         container
         rowSpacing={1}
         columnSpacing={{ xs: 1, sm: 2, md: 3 }}

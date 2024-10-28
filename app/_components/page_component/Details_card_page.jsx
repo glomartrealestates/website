@@ -7,7 +7,7 @@ import DetailsCard from "../special_component/details_card";
 
 export default function DetailCard() {
   return (
-    <Box sx={{ width: "100%", height: "100%", mt: 10 }}>
+    <Box className="px-3  sm:px-0" sx={{ width: "100%", height: "100%", mt: 10 }}>
       <h1 className="text-2xl font-bold text-gray-900 sm:text-4xl mb-2">
         Recommended
       </h1>
@@ -17,17 +17,17 @@ export default function DetailCard() {
         columnSpacing={{ xs: 1, sm: 2, md: 3 }}
         className="my-6"
       >
-        <Grid size={4}>
+        <Grid size={{ xs: 12, sm: 12, md: 4 }}>
           <Link href={"/"}>
             <DetailsCard />
           </Link>
         </Grid>
-        <Grid size={4}>
+        <Grid size={{ xs: 12, sm: 12, md: 4 }} display={{ xs: "none" , sm: "none", md: "block" }} >
           <Link href={"/"}>
             <DetailsCard />
           </Link>
         </Grid>
-        <Grid size={4}>
+        <Grid size={{ xs: 12, sm: 12, md: 4 }}>
           <Link href={"/"}>
             <DetailsCard />
           </Link>
