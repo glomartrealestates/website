@@ -1,5 +1,6 @@
 import Counters from "./_components/page_component/Counters";
 import DetailCard from "./_components/page_component/Details_card_page";
+import MyForm from "./_components/page_component/Form";
 import Hero from "./_components/page_component/Hero";
 import Project from "./_components/page_component/Project";
 import SliderP from "./_components/page_component/SliderP";
@@ -15,7 +16,8 @@ export default function Home() {
       <SliderP />
       <Unit />
       <TowCards />
-      <DetailCard/>
+      <DetailCard />
+      <MyForm />
     </>
   );
 }

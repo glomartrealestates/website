@@ -1,13 +1,12 @@
 "use client";
-import OutlinedInput from '@mui/material/OutlinedInput';
-import InputLabel from '@mui/material/InputLabel';
-import MenuItem from '@mui/material/MenuItem';
-import FormControl from '@mui/material/FormControl';
-import ListItemText from '@mui/material/ListItemText';
-import Select from '@mui/material/Select';
-import Checkbox from '@mui/material/Checkbox';
-import { useState } from 'react';
-
+import { useState } from "react";
+import OutlinedInput from "@mui/material/OutlinedInput";
+import InputLabel from "@mui/material/InputLabel";
+import MenuItem from "@mui/material/MenuItem";
+import FormControl from "@mui/material/FormControl";
+import ListItemText from "@mui/material/ListItemText";
+import Select from "@mui/material/Select";
+import Checkbox from "@mui/material/Checkbox";
 
 const MenuProps = {
   PaperProps: {
@@ -19,16 +18,16 @@ const MenuProps = {
 };
 
 const names = [
-  'Villa',
-  'Twinhouse',
-  'Penthouse',
-  'Chalet',
-  'Studio',
-  'Cabin',
-  'Clinic',
-  'Office',
-  'Retail',
-  'Townhouse',
+  "Villa",
+  "Twinhouse",
+  "Penthouse",
+  "Chalet",
+  "Studio",
+  "Cabin",
+  "Clinic",
+  "Office",
+  "Retail",
+  "Townhouse",
 ];
 
 export default function MultipleSelectCheckmarks() {
@@ -40,14 +39,16 @@ export default function MultipleSelectCheckmarks() {
     } = event;
     setPersonName(
       // On autofill we get a stringified value.
-      typeof value === 'string' ? value.split(',') : value,
+      typeof value === "string" ? value.split(",") : value
     );
   };
 
   return (
-    <div> 
-      <FormControl sx={{ m: 1 , width: 200}} >
-        <InputLabel sx={{ hight: 40}} id="demo-multiple-checkbox-label">...</InputLabel>
+    <div>
+      <FormControl sx={{ m: 1, width: 200 }}>
+        <InputLabel sx={{ hight: 40 }} id="demo-multiple-checkbox-label">
+          ...
+        </InputLabel>
         <Select
           labelId="demo-multiple-checkbox-label"
           id="demo-multiple-checkbox"
@@ -55,7 +56,7 @@ export default function MultipleSelectCheckmarks() {
           value={personName}
           onChange={handleChange}
           input={<OutlinedInput label="Tag" />}
-          renderValue={(selected) => selected.join(', ')}
+          renderValue={(selected) => selected.join(", ")}
           MenuProps={MenuProps}
         >
           {names.map((name) => (
@@ -66,7 +67,6 @@ export default function MultipleSelectCheckmarks() {
           ))}
         </Select>
       </FormControl>
-      
     </div>
   );
 }
