@@ -1,5 +1,9 @@
 .counters-container {
-    padding-left: 60px; 
     padding-top: 60px;  
+  }
+  .counters-container h1{
+    color: rgb(30, 65, 100);
+    font-size: 24px;
+    text-transform: capitalize;
   }
   

@@ -10,7 +10,7 @@ import TowCards from "./_components/special_component/tow_Cards";
 
 export default function Home() {
   return (
-    <>
+    <div style={{ paddingLeft: "60px",paddingRight: "60px" }}>
       <Counters />
       <Project />
       <SliderP />
@@ -18,6 +18,6 @@ export default function Home() {
       <TowCards />
       <DetailCard />
       <MyForm />
-    </>
+    </div>
   );
 }
