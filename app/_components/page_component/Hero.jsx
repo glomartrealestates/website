@@ -10,14 +10,14 @@ function Hero() {
 */}
 
 <section
-  className="w-[full] h-[600px]  bg-[url(https://realestate.eg/ckfinder/userfiles/images/Mivida/Mivida-Emaar%20Misr.jpg)] bg-cover bg-center bg-no-repeat items-center justify-center"
+  className="w-[full] sm:h-[400px]  bg-[url(https://realestate.eg/ckfinder/userfiles/images/Mivida/Mivida-Emaar%20Misr.jpg)] bg-cover bg-center bg-no-repeat items-center justify-center"
 >
   {/* <div
     className="  bg-gray-900/75 sm:bg-transparent sm:from-gray-900/95 sm:to-gray-900/25 ltr:sm:bg-gradient-to-r rtl:sm:bg-gradient-to-l"
   ></div> */}
-<div className='max-w-[1200px] items-center mx-auto'>
+<div className='max-w-[1350px] items-center mx-auto'>
   <div
-    className="  px-4 py-32 sm:px-6 lg:flex lg:h-screen flex flex-col items-start lg:px-8"
+    className="   py-32  lg:flex lg:h-screen flex flex-col items-start "
   >
     <div className="w-full">
       <h1 className=" text-3xl font-extrabold text-white sm:text-5xl">
@@ -31,7 +31,7 @@ function Hero() {
 
       </div>
       
-      <SearchInput className="w-full"/>
+      <SearchInput />
       
       
 

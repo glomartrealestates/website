@@ -1,12 +1,8 @@
 import localFont from "next/font/local";
 import "./globals.css";
 import Header from "./_components/Header";
-// import Hero from "./_components/Hero";
 import Footer from "./_components/Footer";
 import Hero from "./_components/page_component/Hero";
-// import Unit from "./_components/Unit";
-// import Counters from "./_components/Counters";
-// import Project from "./_components/Project";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -28,12 +24,17 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        // className={`${geistSans.variable} ${geistMono.variable} antialiased `} 
-      > <Header />
-      <Hero />
-        <div className="max-w-[1200px] items-center mx-auto">
-        {children}
-        <Footer /></div>
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      >
+        {" "}
+        <div className="sticky top-0 z-50">
+          <Header />
+        </div>
+        <Hero />
+        <div className="max-w-[1350px] items-center mx-auto ">
+          {children}
+          <Footer />
+        </div>{" "}
       </body>
     </html>
   );
