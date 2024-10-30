@@ -4,7 +4,7 @@ import SearchBar from './SearchBar';
 
 function Hero() {
   return (
-    <div itemscope="" itemtype="https://schema.org/CreativeWork" className="relative">
+    <div  itemType="https://schema.org/CreativeWork" className="relative">
       <BackgroundImage />
       <div className="background-overlay absolute inset-0 bg-black opacity-50"></div>
       
