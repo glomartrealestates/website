@@ -1,10 +1,10 @@
 
 import RowAndColumnSpacing from '../special_component/icon_card'
-
+import  './Counters.css';
 function Counters() {
   return (
 
-    <div className='py-4 sm:px-0 px-3 '> 
+    <div className='py-4  px-3 counters-container'> 
     <h1 className=' font-bold text-gray-900 sm:text-4xl mb-3  sm:mb-6'> What Are You Looking For... ?  </h1>
     <RowAndColumnSpacing/> </div>
    )
