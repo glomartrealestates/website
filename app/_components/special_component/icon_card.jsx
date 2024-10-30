@@ -14,11 +14,28 @@ export default function RowAndColumnSpacing() {
                 className="align-center text-center flex flex-col justify-center items-center"
                 sx={{
                   height: 100,
-                  border: '1px solid rgb(211, 219, 230)',
-                  borderRadius: '12px', // Adjust the radius if necessary
+                  border: {
+                    xs: "none", 
+                    md: "1px solid rgb(211, 219, 230)", 
+                  },
+                  borderRadius: '12px',
+                  elevation: {
+                    xs: 0, 
+                    md: 2, 
+                  },
                 }}
               >
-                <div className="pathway-icon">
+                <div
+                  className="pathway-icon"
+                  style={{
+                    backgroundColor: {
+                      xs: "rgb(247, 249, 253)", 
+                      md: "transparent", 
+                    },
+                    padding: "10px", 
+                    borderRadius: '8px', 
+                  }}
+                >
                   <img
                     itemProp="image"
                     alt={`Path icon ${index + 1}`}
@@ -37,7 +54,7 @@ export default function RowAndColumnSpacing() {
                     color: "rgb(26, 32, 40)",
                     fontFamily: "materialMedium",
                     fontSize: "14px",
-                    marginTop: "8px", // Add margin to create space between icon and text
+                    marginTop: "8px", 
                   }}
                 >
                   {index === 0 && "Developer Units"}
