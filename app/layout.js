@@ -2,7 +2,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Header from "./_components/Header";
 import Footer from "./_components/Footer";
-import Hero from "./_components/page_component/Hero";
+import Hero from "./_components/page_component/Hero/Hero";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
