@@ -38,7 +38,7 @@ export default function Page() {
           <div className="flex shrink-0 items-center">
             <img
               alt="Your Company"
-              src="https://www.nawy.com/assets/icons/common/nawy.svg"
+              src="https://static.canva.com/web/images/8439b51bb7a19f6e65ce1064bc37c197.svg"
               className="h-8 w-auto"
             />
           </div>
