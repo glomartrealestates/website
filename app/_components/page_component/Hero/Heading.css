@@ -1,0 +1,31 @@
+/* Import or define the MaterialBold font */
+@font-face {
+    font-family: 'MaterialBold';
+    src: url('/fonts/MaterialBold.woff2') format('woff2'); /* Adjust path as needed */
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+  /* Heading component styles */
+  .heading-container {
+    text-align: left;
+    color: white;
+    font-family: 'MaterialBold', sans-serif;
+  }
+  
+  .heading-title {
+    font-size: 1.875rem; /* 3xl in Tailwind */
+    font-weight: 800; /* Equivalent to font-extrabold */
+  }
+  
+  @media (min-width: 640px) {
+    .heading-title {
+      font-size: 3rem; /* 5xl in Tailwind */
+    }
+  }
+  
+  .heading-subtitle {
+    margin-top: 1rem; /* mt-4 in Tailwind */
+    font-size: 1.25rem; /* xl in Tailwind */
+  }
+  
