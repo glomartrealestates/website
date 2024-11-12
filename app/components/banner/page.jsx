@@ -1,6 +1,6 @@
 import React from 'react'
 import "./style.css"
-export default function page() {
+export default function Page() {
     return (
         <div className='banner h-[72vh] flex flex-col gap-5 justify-center px-12  lg:px-24 ' >
 
