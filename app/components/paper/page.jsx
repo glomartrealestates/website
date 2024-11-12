@@ -1,8 +1,6 @@
 import { Grid } from '@mui/material'
 import React from 'react'
-
-export default function page(props) {
-
+export default function Page(props) {
     return (
         <div>
             <Grid container className='flex gap-10 justify-center'>
@@ -13,7 +11,6 @@ export default function page(props) {
                     <p className='text-gray-500 mb-3'>{props.results ? `${props.results}  Results Available` : undefined} </p>
                 </Grid>
             </Grid>
-
             <Grid container className='flex gap-10 justify-center'>
                 {
                     props.data.map((item, index) => {
@@ -43,14 +40,11 @@ export default function page(props) {
                                 <p className="text-center font-bold">{item.title}</p>
                                 <p className="text-center text-gray-500"><span>{item.number}</span> <span>{item.compounds}</span></p>
                                 <p className="text-center text-gray-500"><span>{item.number2}</span> <span>{item.text2}</span></p>
-
                             </Grid>
-
                         )
                     })
                 }
             </Grid>
-
         </div>
     )
 }

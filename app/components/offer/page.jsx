@@ -1,7 +1,7 @@
 import { Grid } from '@mui/material'
 import React from 'react'
 
-export default function page() {
+export default function Page() {
   return (
     <div>
         <Grid container className='flex gap-5'>
