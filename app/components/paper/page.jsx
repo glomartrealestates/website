@@ -1,19 +1,19 @@
 import { Grid } from '@mui/material'
 import React from 'react'
-export default function Page(props) {
+export default function Page({ h1, results, data }) {
     return (
         <div>
             <Grid container className='flex gap-10 justify-center'>
                 <Grid item xs={12} lg={10.8}>
-                    <h1 className='font-bold text-2xl my-4'  style={{ color: "rgb(30, 65, 100)" }}>
-                        {props.h1}
+                    <h1 className='font-bold text-2xl my-4' style={{ color: "rgb(30, 65, 100)" }}>
+                        {h1}
                     </h1>
-                    <p className='text-gray-500 mb-3'>{props.results ? `${props.results}  Results Available` : undefined} </p>
+                    <p className='text-gray-500 mb-3'>{results ? `${results}  Results Available` : undefined} </p>
                 </Grid>
             </Grid>
             <Grid container className='flex gap-10 justify-center'>
                 {
-                    props.data.map((item, index) => {
+                    data.map((item, index) => {
 
                         return (
                             <Grid
