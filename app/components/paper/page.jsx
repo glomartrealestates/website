@@ -13,7 +13,7 @@ export default function Page({ h1, results, data }) {
             </Grid>
             <Grid container className='flex gap-10 justify-center'>
                 {
-                    data.map((item, index) => {
+                    data && data?.map((item, index) => {
 
                         return (
                             <Grid
