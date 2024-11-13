@@ -1,6 +1,7 @@
 import React from 'react'
 import Paper from "../../components/paper/page"
 import Index from "../../components/banner/page"
+import Carousel from "../../components/carousel/Carousel"
 export default function page() {
     let icon_paper_h1 = "What Are You Looking For ?"
     let top_area = "Top Areas"
@@ -145,7 +146,7 @@ export default function page() {
             <Index />
             <div className="py-20 px-10 lg:px-20 ">
 
-
+                <Carousel />
                 <Paper data={icon_paper} h1={icon_paper_h1} />
                 <Paper data={area} h1={top_area} results={results} />
 
