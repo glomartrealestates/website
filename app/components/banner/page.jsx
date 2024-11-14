@@ -87,16 +87,16 @@ export default function Page() {
                                         <li
                                             key={index}
                                             onClick={() => handleItemClick(item)}
-                                            className=" py-2 flex items center cursor-pointer hover:bg-gray-100 flex"
+                                            className=" py-2 flex items-center cursor-pointer hover:bg-gray-100 flex"
                                         >
-                                          <div className='flex items center gap-2 flex-1'>
+                                          <div className='flex items-center px-2  gap-2 flex-1'>
                                           <img src={item.img} className='w-[40px] h-[40px]' alt="Property" />
                                             <div  >
                                                 <p className='text-md'>{item.top}</p>
                                                 <p className='text-sm text-gray-400'>{item.bottom}</p>
                                             </div>
                                           </div>
-                                            <IoIosArrowForward />
+                                            <IoIosArrowForward className='text-sm text-gray-400' />
                                         </li>
                                     ))
                                 ) : (

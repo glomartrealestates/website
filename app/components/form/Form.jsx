@@ -15,8 +15,8 @@ export default function ExpertAdviceForm() {
     const [selectedCountry, setSelectedCountry] = useState(countries[0]);
     const [phone, setPhone] = useState('');
     return (
-        <div className="flex justify-center items-center min-h-screen ">
-            <div className="bg-gray-200 w-full max-w-md p-8 rounded-lg shadow-lg">
+        <div className="flex justify-center items-center  mt-20 ">
+            <div className="bg-gray-200 w-full max-w-lg p-8 rounded-lg shadow-md">
                 <div className="text-center mb-6">
                     <div className="flex justify-center mb-3">
                         <svg
