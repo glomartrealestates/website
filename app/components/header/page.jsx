@@ -6,10 +6,13 @@ import { FiHeart } from "react-icons/fi";
 
 const navigation = [
   { name: 'Home', href: '#', current: true },
-  { name: 'Rent', href: '#', current: false },
+  // { name: 'Search', href: '#', current: false },
   { name: 'Sell', href: '#', current: false },
+  { name: 'Rent', href: '#', current: false },
   { name: 'About', href: '#', current: false },
   { name: 'Contact', href: '#', current: false },
+  // { name: 'Navy Now', href: '#', current: false },
+  // { name: 'Careers', href: '#', current: false },
 
 
 ]
