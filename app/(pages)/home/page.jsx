@@ -2,7 +2,16 @@ import React from 'react'
 import Paper from "../../components/paper/page"
 import Index from "../../components/banner/page"
 import Carousel from "../../components/carousel/Carousel"
-export default function page() {
+import Form from "../../components/form/Form"
+import CardCarousel from "../../components/carousel/CardCarousel"
+import Logos from "../../components/carousel/logos"
+
+import Offer from "../../components/offer/page"
+
+import { properties } from "./data"
+import { Grid } from '@mui/material'
+
+export default function Page() {
     let icon_paper_h1 = "What Are You Looking For ?"
     let top_area = "Top Areas"
     let results = 29
@@ -141,16 +150,95 @@ export default function page() {
 
         },
     ]
+    let data = [
+        {
+            img: "https://prod-images.cooingestate.com/processed/compound_image/image/2023/low.webp",
+            h1: "salt",
+            number: 4,
+            text: "Properties"
+        },
+        {
+            img: "https://prod-images.cooingestate.com/processed/compound_image/image/2023/low.webp",
+            h1: "salt",
+            number: 4,
+            text: "Properties"
+        },
+        {
+            img: "https://prod-images.cooingestate.com/processed/compound_image/image/2023/low.webp",
+            h1: "salt",
+            number: 4,
+            text: "Properties"
+        },
+        {
+            img: "https://prod-images.cooingestate.com/processed/compound_image/image/2023/low.webp",
+            h1: "salt",
+            number: 4,
+            text: "Properties"
+        },
+        {
+            img: "https://prod-images.cooingestate.com/processed/compound_image/image/2023/low.webp",
+            h1: "salt",
+            number: 4,
+            text: "Properties"
+        },
+        {
+            img: "https://prod-images.cooingestate.com/processed/compound_image/image/2023/low.webp",
+            h1: "salt",
+            number: 4,
+            text: "Properties"
+        },
+        {
+            img: "https://prod-images.cooingestate.com/processed/compound_image/image/2023/low.webp",
+            h1: "salt",
+            number: 4,
+            text: "Properties"
+        },
+        {
+            img: "https://prod-images.cooingestate.com/processed/compound_image/image/2023/low.webp",
+            h1: "salt",
+            number: 4,
+            text: "Properties"
+        },
+        {
+            img: "https://prod-images.cooingestate.com/processed/compound_image/image/2023/low.webp",
+            h1: "salt",
+            number: 4,
+            text: "Properties"
+        },
+    ];
+    let logos = [
+        {
+            img: "https://prod-images.cooingestate.com/processed/compound/cover_image/1364/high.webp"
+        },
+        {
+            img: "https://prod-images.cooingestate.com/processed/compound/cover_image/1368/high.webp"
+        },
+       
+        {
+            img: "https://prod-images.cooingestate.com/processed/compound/cover_image/1364/high.webp"
+        },
+        {
+            img: "https://prod-images.cooingestate.com/processed/compound/cover_image/1364/high.webp"
+        },
+    ]
     return (
         <div>
             <Index />
             <div className="py-20 px-10 lg:px-20 ">
 
-                <Carousel />
+       
                 <Paper data={icon_paper} h1={icon_paper_h1} />
+                <Offer />
+                <Logos data={logos} />
+
                 <Paper data={area} h1={top_area} results={results} />
+                <CardCarousel data={properties} />
+                <Carousel data={data} />
+
+                <Form />
 
             </div>
         </div>
     )
 }
+
