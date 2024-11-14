@@ -29,8 +29,8 @@ export default function Page({ h1, data, results }) {
                                 key={index}
                                 className="border cursor-pointer flex gap-3 p-4 flex-col rounded-lg justify-center items-center"
                                 style={{ borderColor: "#ccc" }}
-                                onClick = {()=>{
-                                   item.link ? router.push(item.link) : undefined
+                                onClick={() => {
+                                    item.link ? router.push(item.link) : undefined
                                 }}
                             >
                                 <img
