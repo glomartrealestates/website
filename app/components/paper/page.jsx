@@ -1,7 +1,7 @@
 import { Grid } from '@mui/material'
 import React from 'react'
 
-export default function page(props) {
+export default function Page(props) {
 
     return (
         <div>

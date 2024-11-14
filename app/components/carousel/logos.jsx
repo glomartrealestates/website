@@ -18,28 +18,26 @@ import { MdKeyboardArrowRight } from "react-icons/md";
 // import required modules
 import { FreeMode, Pagination, Navigation } from 'swiper/modules';
 import { Grid } from '@mui/material';
+import Card from "../card/Cards"
 
 export default function App({ data }) {
+
 
     return (
         <div>
 
             <Grid container className="flex justify-center">
                 <Grid item xs={12} lg={10.8}>
-                    <h1 className='font-bold text-2xl my-4' style={{ color: "rgb(30, 65, 100)" }}>
-                        Top Compounds
-                    </h1>
-                    <p className='text-gray-500 mb-3'>21 Results Available </p>
 
                     <div className="relative">
                         <Swiper
                             spaceBetween={20}
-                            id='swiper-2'
-
                             navigation={{
                                 nextEl: '.swiper-button-next',
                                 prevEl: '.swiper-button-prev',
                             }}
+                            id='swiper-3'
+
                             modules={[Navigation]}
                             className="mySwiper"
                             breakpoints={{
@@ -54,26 +52,14 @@ export default function App({ data }) {
                                     slidesPerView: 3, // Medium screens
                                 },
                                 1024: {
-                                    slidesPerView: 5, // Large screens
+                                    slidesPerView: 3, // Large screens
                                 },
                             }}
                         >
                             {
-                                data.map((item, index) => (
-                                    <SwiperSlide key={index}>
-                                        <div
-                                            className="box w-full h-[200px] flex flex-col justify-end gap-2 py-3 rounded-lg cursor-pointer"
-                                            style={{
-                                                backgroundImage: `linear-gradient(to top, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.1) ), url(${item.img})`,
-                                                backgroundSize: 'cover',
-                                                backgroundPosition: 'center',
-                                            }}
-                                        >
-                                            <p className="text-white font-bold">{item.h1}</p>
-                                            <p className="text-gray-200">
-                                                <span>{item.number}</span> <span>{item.text}</span>
-                                            </p>
-                                        </div>
+                                data.map((ele, index) => (
+                                    <SwiperSlide key={index} >
+                                        <img src={ele.img} alt="..." className='rounded-lg h-[200px]' />
                                     </SwiperSlide>
                                 ))
                             }
