@@ -1,7 +1,7 @@
 import { Grid } from '@mui/material'
 import React from 'react'
 
-export default function Page({h1 , data , results}) {
+export default function Page({ h1, data, results }) {
 
     return (
         <div>
@@ -40,8 +40,16 @@ export default function Page({h1 , data , results}) {
                                     className={`m-auto ${item.round === "full" ? "border" : undefined}`}
                                 />
                                 <p className="text-center font-bold">{item.title}</p>
-                                <p className="text-center text-gray-500"><span>{item.number}</span> <span>{item.compounds}</span></p>
-                                <p className="text-center text-gray-500"><span>{item.number2}</span> <span>{item.text2}</span></p>
+                                {
+                                    item.number &&
+                                    <p className="text-center text-gray-500"><span>{item.number}</span> <span>{item.compounds}</span></p>
+
+                                }
+                                {
+                                    item.number2 &&
+                                    <p className="text-center text-gray-500"><span>{item.number2}</span> <span>{item.text2}</span></p>
+
+                                }
                             </Grid>
                         )
                     })
