@@ -33,8 +33,8 @@ export default function App({ data }) {
                         <Swiper
                             spaceBetween={20}
                             navigation={{
-                                nextEl: '.swiper-button-next',
-                                prevEl: '.swiper-button-prev',
+                                nextEl: '.swiper-button-nexttt',
+                                prevEl: '.swiper-button-prevvv',
                             }}
                             id='swiper-3'
 
@@ -66,12 +66,12 @@ export default function App({ data }) {
                         </Swiper>
 
                         {/* Previous Button */}
-                        <div className="swiper-button-prev absolute top-1/2 left-2 transform  z-10 cursor-pointer text-white bg-black rounded-full p-1 w-[25px]">
+                        <div className="swiper-button-prevvv  w-[35px] h-[35px]  flex justify-center items-center absolute top-1/2 left-2 transform -translate-1/2   z-10 cursor-pointer text-white bg-black rounded-full p-1 ">
                             <MdKeyboardArrowLeft />
                         </div>
 
                         {/* Next Button */}
-                        <div className="swiper-button-next absolute top-1/2 right-2 transform  z-10 cursor-pointer text-white bg-black rounded-full p-1 w-[25px]">
+                        <div className="swiper-button-nexttt  w-[35px] h-[35px] flex justify-center items-center  absolute top-1/2 right-2 transform -translate-1/2  z-10 cursor-pointer text-white bg-black rounded-full p-1 ">
                             <MdKeyboardArrowRight />
                         </div>
                     </div>
