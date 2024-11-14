@@ -13,13 +13,11 @@ import { MdExpandMore } from "react-icons/md";
 export default function Page() {
   const navigation = [
     { name: 'Home', href: '#', current: true },
-    { name: 'Search', href: '#', current: false },
+    { name: 'Rent', href: '#', current: false },
     { name: 'Sell', href: '#', current: false },
-    { name: 'Blog', href: '#', current: false },
     { name: 'About', href: '#', current: false },
     { name: 'Contact', href: '#', current: false },
-    { name: 'Navy Now', href: '#', current: false },
-    { name: 'Careers', href: '#', current: false },
+    
 
 
   ]

@@ -4,8 +4,7 @@ import React from 'react';
 export default function Page() {
   const data = [
     {
-      backgroundImage: "https://www.nawy.com/assets/images/banners/offers-bg-desktop.webp",
-      image: "https://www.nawy.com/assets/images/offers/offers-desktop-en.svg",
+      backgroundImage: "https://media.istockphoto.com/id/1371256107/photo/the-turquoise-wave-water-background-of-summer-beach-at-the-seashore-and-beach-summer-pattern.jpg?b=1&s=612x612&w=0&k=20&c=7AcZHMg5B0bnLeK3RQ_zfjcra3WinNHZKZ03INzcNsw=",
     },
     {
       backgroundImage: "https://www.nawy.com/_next/static/media/sahel-banner.f446f11a.webp",
@@ -29,7 +28,10 @@ export default function Page() {
               backgroundPosition: 'center',
             }}
           >
-            <img src={item.image} alt="..." className='absolute left-[20px]  top-1/2 -translate-y-1/2' />
+            {
+              item.image && <img src={item.image} alt="..." className='absolute left-[20px]  top-1/2 -translate-y-1/2' />
+
+            }
           </Grid>
         ))}
       </Grid>
