@@ -5,12 +5,8 @@ import Carousel from "../../components/carousel/Carousel";
 import Form from "../../components/form/Form";
 import CardCarousel from "../../components/carousel/CardCarousel";
 import Logos from "../../components/carousel/logos";
-
-import { properties } from "./data";
-
+import { properties, resaleUnits } from "./data";
 import Offer from "../../components/offer/page";
-
-import { Grid } from "@mui/material";
 import { area } from "./data";
 export default function Page() {
   let icon_paper_h1 = "What Are You Looking For ?";
@@ -31,7 +27,7 @@ export default function Page() {
       title: "Resale Units",
       width: 40,
       link: `/home/search?data=${encodeURIComponent(
-        JSON.stringify(properties)
+        JSON.stringify(resaleUnits)
       )}`,
     },
     {
@@ -132,7 +128,7 @@ export default function Page() {
     },
   ];
   return (
-    <div>
+    <div className="min-h-screen">
       <Index />
       <div className="py-20 px-10 lg:px-20 ">
         <Paper data={icon_paper} h1={icon_paper_h1} />
