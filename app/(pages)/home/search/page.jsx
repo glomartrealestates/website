@@ -26,7 +26,7 @@ function SearchContent() {
 
   useEffect(() => {
     const dataParam = params.get("data");
-
+    console.log(dataParam)
     if (dataParam) {
       try {
         const parsedData = JSON.parse(decodeURIComponent(dataParam));

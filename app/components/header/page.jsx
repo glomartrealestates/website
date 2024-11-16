@@ -12,9 +12,9 @@ import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
 import { FiHeart } from "react-icons/fi";
 
 const navigation = [
-  { name: "Home", href: "#", current: true },
+  { name: "Home", href: "/", current: true },
   // { name: 'Search', href: '#', current: false },
-  { name: "Sell", href: "#", current: false },
+  { name: "Sell", href: "/sell", current: false },
   { name: "Rent", href: "#", current: false },
   { name: "About", href: "#", current: false },
   { name: "Contact", href: "#", current: false },
