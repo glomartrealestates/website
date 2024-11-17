@@ -87,7 +87,7 @@ export const properties = [
 ];
 export const resaleUnits = [
   {
-    href: "https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?auto=compress&cs=tinysrgb&w=600",
+    href: "https://images.pexels.com/photos/783745/pexels-photo-783745.jpeg?auto=compress&cs=tinysrgb&w=600",
     title: "Apartment - SODIC East",
     location: "New Heliopolis, Egypt",
     bedrooms: 2,
@@ -99,7 +99,7 @@ export const resaleUnits = [
     price: "13,074,000",
   },
   {
-    href: "https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?auto=compress&cs=tinysrgb&w=600",
+    href: "https://images.pexels.com/photos/259588/pexels-photo-259588.jpeg?auto=compress&cs=tinysrgb&w=600",
     title: "Apartment - ZED East",
     location: "New Cairo, Egypt",
     bedrooms: 1,
@@ -111,7 +111,7 @@ export const resaleUnits = [
     price: "19,745,000",
   },
   {
-    href: "https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?auto=compress&cs=tinysrgb&w=600",
+    href: "https://images.pexels.com/photos/1396132/pexels-photo-1396132.jpeg?auto=compress&cs=tinysrgb&w=600",
     title: "Apartment - Bloomfields",
     location: "Mostakbal City, Egypt",
     bedrooms: 3,
@@ -123,7 +123,7 @@ export const resaleUnits = [
     price: "10,667,000",
   },
   {
-    href: "https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?auto=compress&cs=tinysrgb&w=600",
+    href: "https://images.pexels.com/photos/358636/pexels-photo-358636.jpeg?auto=compress&cs=tinysrgb&w=600",
     title: "Apartment - Bloomfields",
     location: "Mostakbal City, Egypt",
     bedrooms: 3,
@@ -135,7 +135,7 @@ export const resaleUnits = [
     price: "10,667,000",
   },
   {
-    href: "https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?auto=compress&cs=tinysrgb&w=600",
+    href: "https://images.pexels.com/photos/280229/pexels-photo-280229.jpeg?auto=compress&cs=tinysrgb&w=600",
     title: "Apartment - Bloomfields",
     location: "Mostakbal City, Egypt",
     bedrooms: 3,
