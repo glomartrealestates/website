@@ -11,7 +11,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select"
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 export default function ContactPage() {
   const [message, setMessage] = useState({
@@ -32,6 +32,7 @@ const handleSubmit = (e)=>{
     e.preventDefault();
     console.log(message)
 }
+
   return (
     <div className="min-h-screen relative">
       <Image

@@ -33,7 +33,6 @@ export default function Page() {
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div className="relative flex h-16 items-center justify-between">
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
-            {/* Mobile menu button */}
             <DisclosureButton className="group relative inline-flex items-center justify-center rounded-md p-2 text-dark">
               <span className="absolute -inset-0.5" />
               <span className="sr-only">Open main menu</span>
@@ -81,7 +80,6 @@ export default function Page() {
               </span>{" "}
               <span className="text-xl text-dark dark:text-white">العربية</span>
             </p>
-            {/* Profile dropdown */}
             <Menu as="div" className="relative ml-3">
               <div>
                 <MenuButton className="relative flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
