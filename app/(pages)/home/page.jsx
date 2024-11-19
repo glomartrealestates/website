@@ -136,10 +136,10 @@ export default function Page() {
         <Logos data={logos} />
 
         <Paper data={area} h1={top_area} results={results} />
-        <CardCarousel data={properties} />
+        <CardCarousel data={properties} h1="Recommended" />
         <Carousel data={data} />
 
-        <Form />
+        
       </div>
     </div>
   );

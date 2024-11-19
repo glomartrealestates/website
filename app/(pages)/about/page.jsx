@@ -60,9 +60,7 @@ function Page() {
           }
         </div>
       </div>
-      <div className='p-5'>
-        <Form />
-      </div>
+     
 
     </div>
   )
