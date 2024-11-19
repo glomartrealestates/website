@@ -10,7 +10,7 @@ export default function Page() {
   return (
     <div className="py-20">
       <Paper data={area} h1={top_area} />
-      <Form />
+    
     </div>
   );
 }

@@ -51,7 +51,7 @@ export default function Sell() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-100">
+    <div className="min-h-screen bg-gray-100 p-10">
       <div className="container mx-auto flex flex-col items-center justify-center space-y-8">
         <div className="head text-center my-8">
           <div className="icon">

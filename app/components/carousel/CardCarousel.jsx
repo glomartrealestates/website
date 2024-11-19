@@ -20,7 +20,7 @@ import { FreeMode, Pagination, Navigation } from "swiper/modules";
 import { Grid } from "@mui/material";
 import Card from "../card/Cards";
 
-export default function App({ data }) {
+export default function App({ data  , h1}) {
   return (
     <div>
       <Grid container className="flex justify-center">
@@ -29,7 +29,7 @@ export default function App({ data }) {
             className="font-bold text-2xl my-4"
             style={{ color: "rgb(30, 65, 100)" }}
           >
-            Recommended{" "}
+            {h1}
           </h1>
 
           <div className="relative">
