@@ -4,14 +4,14 @@ import Table from "./Tables"
 import { Grid } from '@mui/material'
 import Details from './Details'
 import Contact from "./Contact"
-export default function UnitDetails() {
+export default function UnitDetails({unit}) {
     let [hidden, setHidden] = useState(true)
     return (
         <div>
             <Grid container className='flex justify-center py-10'>
                 <Grid item xs={12} lg={10.8}>
 
-                    <Contact/>
+                    <Contact unit={unit}/>
 
                     <h1 className="font-bold text-2xl my-4"
                         style={{ color: "rgb(30, 65, 100)" }}>Details</h1>

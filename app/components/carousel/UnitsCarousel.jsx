@@ -3,8 +3,8 @@ import { Grid } from "@mui/material";
 import React, { useState, useContext } from "react";
 import { Context, ContextData } from "../../network/context";
 
-export default function UnitsCarousel() {
-    const images = [
+export default function UnitsCarousel({unit}) {
+    const images = unit?.propertyImage?.length > 0 ? unit.propertyImage.length : [
         {
             img: "https://prod-images.cooingestate.com/processed/property_image/image/164288/high.webp",
         },
