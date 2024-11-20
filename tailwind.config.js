@@ -8,6 +8,10 @@ module.exports = {
   ],
   theme: {
   	extend: {
+		grayscale: {
+			50: '50%',
+			75: '75%',
+		},
   		colors: {
 			"text-color": "#1e4164",
   			cardbgDark: '#1c252e',

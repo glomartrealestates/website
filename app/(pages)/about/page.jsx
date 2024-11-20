@@ -36,7 +36,7 @@ function Page() {
 
         </div>
       </div>
-      <div>
+      <div className='p-10'>
         <h1 className="font-bold text-3xl my-10 text-center" style={{ color: "rgb(30, 65, 100)" }}>our products</h1>
         <p className='text-center text-md'>On a mission to revolutionize the real estate industry, we promise to help each and every one of <br />our customers to make a well-informed decision and buy their dream house.</p>
       </div>
