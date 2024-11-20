@@ -31,7 +31,7 @@ export default function Page() {
   return (
     <Disclosure as="nav" className="shadow-md">
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-        <div className="relative flex h-16 items-center justify-between">
+        <div className="relative flex h-18 items-center justify-between">
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
             <DisclosureButton className="group relative inline-flex items-center justify-center rounded-md p-2 text-dark">
               <span className="absolute -inset-0.5" />
@@ -52,10 +52,10 @@ export default function Page() {
                 alt="Your Company"
                 src="/images/logo.png"
 
-                className="h-14 w-auto"
+                className="h-[75px] w-auto"
               />
             </div>
-            <div className="hidden sm:ml-6 sm:block flex-1">
+            <div className="hidden sm:ml-6 sm:block  flex-1 lg:flex items-center">
               <div className="space-x-4 flex flex-1 items-center justify-center">
                 {navigation.map((item) => (
                   <a
