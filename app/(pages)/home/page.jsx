@@ -139,7 +139,7 @@ export default function Page() {
         <CardCarousel data={properties} h1="Recommended" />
         <Carousel data={data} />
 
-        
+
       </div>
     </div>
   );
