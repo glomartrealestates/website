@@ -317,8 +317,9 @@ export default function Page() {
       <div className="mt-5">
         <img
           alt="Your Company"
-          src="https://static.canva.com/web/images/8439b51bb7a19f6e65ce1064bc37c197.svg"
-          className="h-8 w-auto"
+          src="/images/logo.png"
+
+          className="h-14 w-auto"
         />
         <p className="flex justify-between items-center text-gray-600 mt-3 mb-3">
           <span>Real Estate Company</span>

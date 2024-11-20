@@ -50,8 +50,9 @@ export default function Page() {
             <div className="flex shrink-0 items-center">
               <img
                 alt="Your Company"
-                src="https://static.canva.com/web/images/8439b51bb7a19f6e65ce1064bc37c197.svg"
-                className="h-8 w-auto"
+                src="/images/logo.png"
+
+                className="h-14 w-auto"
               />
             </div>
             <div className="hidden sm:ml-6 sm:block flex-1">
