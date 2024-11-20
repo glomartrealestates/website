@@ -3,63 +3,50 @@ import React, { useState, useEffect } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import Card from "../../../components/card/Cards";
 import { Grid } from "@mui/material";
-import Pagination from "../../../components/pagination/Pagination";
+import { Suspense } from "react";
 
 function SearchContent() {
-  const [currentPage, setCurrentPage] = useState(1);
-  const [data, setData] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [totalPages, setTotalPages] = useState(1);
-  const itemsPerPage = 6;
-
   const router = useRouter();
   const params = useSearchParams();
+  const [data, setData] = useState([]);
+  const [loading, setLoading] = useState(true);
 
-  const fetchData = async (page = currentPage) => {
+  const currentPage = parseInt(params.get("page") || "1");
+  const itemsPerPage = 5;
+
+  const fetchData = async () => {
     setLoading(true);
-    try {
-      const response = await fetch(
-        `/api/data?page=${page}&limit=${itemsPerPage}`
-      );
-      const result = await response.json();
-      setData(result.items);
-      setTotalPages(Math.ceil(result.total / itemsPerPage));
-    } catch (error) {
-      console.error("Error fetching data:", error);
-    }
+    const response = await fetch(
+      `/api/data?page=${currentPage}&limit=${itemsPerPage}`
+    );
+    const result = await response.json();
+    setData(result);
     setLoading(false);
   };
 
   useEffect(() => {
-    const pageParam = params.get("page");
     const dataParam = params.get("data");
-
-    // Set the current page from URL or default to 1
-    const page = pageParam ? parseInt(pageParam) : 1;
-    setCurrentPage(page);
-
+    console.log(dataParam)
     if (dataParam) {
-
       try {
         const parsedData = JSON.parse(decodeURIComponent(dataParam));
         setData(parsedData);
         setLoading(false);
       } catch (error) {
         console.error("Error parsing data:", error);
-        fetchData(page); // If parsing fails, fallback to fetching data
+        fetchData();
       }
     } else {
-      fetchData(page); // Fetch data when no `data` param exists
+      fetchData();
     }
-  }, [params]); // Only re-run when params change
+  }, [params, currentPage]);
 
   const handlePageChange = (page) => {
-    setCurrentPage(page);
-    router.push(`/home/search?data=${encodeURIComponent(
-      JSON.parse(resaleUnits)
-    )}&page=${currentPage}`); // Update the page in the URL
-    fetchData(page); // Ensure new data is fetched for the new page
+    const serializedData = encodeURIComponent(JSON.stringify(data));
+    router.push(`/home/search?data=${serializedData}&page=${page}`);
   };
+
+  const totalPages = Math.ceil(100 / itemsPerPage);
 
   if (loading) return <div>Loading...</div>;
 
@@ -73,17 +60,56 @@ function SearchContent() {
         ))}
       </Grid>
 
-      <div className="flex justify-center my-10">
-        <Pagination
-          currentPage={currentPage}
-          totalPages={totalPages}
-          onPageChange={(page) => handlePageChange(page)}
-        />
-      </div>
+      <nav aria-label="Page navigation example flex justify-center w-full">
+        <ul className="inline-flex -space-x-px text-sm justify-center mt-10 w-full">
+          <li>
+            <a
+              href="#"
+              onClick={() => handlePageChange(currentPage - 1)}
+              className="flex items-center justify-center px-3 h-8 ms-0 leading-tight text-gray-500 bg-white border border-e-0 border-gray-300 rounded-s-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+            >
+              Previous
+            </a>
+          </li>
+
+          {[...Array(totalPages)].map((_, index) => {
+            const page = index + 1;
+            return (
+              <li key={page}>
+                <a
+                  href="#"
+                  onClick={() => handlePageChange(page)}
+                  className={`flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white ${
+                    currentPage === page
+                      ? "text-blue-600 border-blue-300 bg-blue-50"
+                      : ""
+                  }`}
+                >
+                  {page}
+                </a>
+              </li>
+            );
+          })}
+
+          <li>
+            <a
+              href="#"
+              onClick={() => handlePageChange(currentPage + 1)}
+              className="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 rounded-e-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+            >
+              Next
+            </a>
+          </li>
+        </ul>
+      </nav>
     </div>
   );
 }
 
 export default function Page() {
-  return <SearchContent />;
+  return (
+    <Suspense fallback={<div>Loading search results...</div>}>
+      <SearchContent />
+    </Suspense>
+  );
 }

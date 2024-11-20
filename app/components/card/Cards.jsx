@@ -3,8 +3,9 @@ import { FiHeart, FiPhone } from "react-icons/fi";
 import { BsWhatsapp } from "react-icons/bs";
 
 const PropertyCard = ({ property }) => {
+
   return (
-    <div className="w-full  border rounded-lg ">
+    <div className="w-full  border rounded-lg " >
       {/* Image Section */}
       <div className="relative w-full h-48 overflow-hidden  rounded-t-lg">
         <img

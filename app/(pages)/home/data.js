@@ -25,6 +25,7 @@ export const ClientDetails = [
 
 export const properties = [
   {
+    id:1,
     href: "https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?auto=compress&cs=tinysrgb&w=600",
     title: "Apartment - SODIC East",
     location: "New Heliopolis, Egypt",
@@ -37,6 +38,7 @@ export const properties = [
     price: "13,074,000",
   },
   {
+    id:2,
     href: "https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?auto=compress&cs=tinysrgb&w=600",
     title: "Apartment - ZED East",
     location: "New Cairo, Egypt",
@@ -49,6 +51,8 @@ export const properties = [
     price: "19,745,000",
   },
   {
+    id:3,
+
     href: "https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?auto=compress&cs=tinysrgb&w=600",
     title: "Apartment - Bloomfields",
     location: "Mostakbal City, Egypt",
@@ -61,6 +65,8 @@ export const properties = [
     price: "10,667,000",
   },
   {
+    id:4,
+
     href: "https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?auto=compress&cs=tinysrgb&w=600",
     title: "Apartment - Bloomfields",
     location: "Mostakbal City, Egypt",
@@ -73,6 +79,8 @@ export const properties = [
     price: "10,667,000",
   },
   {
+    id:5,
+
     href: "https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?auto=compress&cs=tinysrgb&w=600",
     title: "Apartment - Bloomfields",
     location: "Mostakbal City, Egypt",
@@ -85,6 +93,7 @@ export const properties = [
     price: "10,667,000",
   },
   {
+    id:6,
     href: "https://images.pexels.com/photos/783745/pexels-photo-783745.jpeg?auto=compress&cs=tinysrgb&w=600",
     title: "Apartment - SODIC East",
     location: "New Heliopolis, Egypt",
@@ -97,6 +106,7 @@ export const properties = [
     price: "13,074,000",
   },
   {
+    id:7,
     href: "https://images.pexels.com/photos/259588/pexels-photo-259588.jpeg?auto=compress&cs=tinysrgb&w=600",
     title: "Apartment - ZED East",
     location: "New Cairo, Egypt",
@@ -109,6 +119,7 @@ export const properties = [
     price: "19,745,000",
   },
   {
+    id:8,
     href: "https://images.pexels.com/photos/1396132/pexels-photo-1396132.jpeg?auto=compress&cs=tinysrgb&w=600",
     title: "Apartment - Bloomfields",
     location: "Mostakbal City, Egypt",
@@ -121,6 +132,7 @@ export const properties = [
     price: "10,667,000",
   },
   {
+    id:9,
     href: "https://images.pexels.com/photos/358636/pexels-photo-358636.jpeg?auto=compress&cs=tinysrgb&w=600",
     title: "Apartment - Bloomfields",
     location: "Mostakbal City, Egypt",
@@ -133,6 +145,7 @@ export const properties = [
     price: "10,667,000",
   },
   {
+    id:10,
     href: "https://images.pexels.com/photos/280229/pexels-photo-280229.jpeg?auto=compress&cs=tinysrgb&w=600",
     title: "Apartment - Bloomfields",
     location: "Mostakbal City, Egypt",
@@ -148,6 +161,7 @@ export const properties = [
 ];
 export const resaleUnits = [
   {
+    id : 1,
     href: "https://images.pexels.com/photos/783745/pexels-photo-783745.jpeg?auto=compress&cs=tinysrgb&w=600",
     title: "Apartment - SODIC East",
     location: "New Heliopolis, Egypt",
@@ -160,6 +174,7 @@ export const resaleUnits = [
     price: "13,074,000",
   },
   {
+    id : 2,
     href: "https://images.pexels.com/photos/259588/pexels-photo-259588.jpeg?auto=compress&cs=tinysrgb&w=600",
     title: "Apartment - ZED East",
     location: "New Cairo, Egypt",
@@ -172,6 +187,7 @@ export const resaleUnits = [
     price: "19,745,000",
   },
   {
+    id : 3,
     href: "https://images.pexels.com/photos/1396132/pexels-photo-1396132.jpeg?auto=compress&cs=tinysrgb&w=600",
     title: "Apartment - Bloomfields",
     location: "Mostakbal City, Egypt",
@@ -184,6 +200,7 @@ export const resaleUnits = [
     price: "10,667,000",
   },
   {
+    id : 4,
     href: "https://images.pexels.com/photos/358636/pexels-photo-358636.jpeg?auto=compress&cs=tinysrgb&w=600",
     title: "Apartment - Bloomfields",
     location: "Mostakbal City, Egypt",
@@ -196,6 +213,7 @@ export const resaleUnits = [
     price: "10,667,000",
   },
   {
+    id : 5,
     href: "https://images.pexels.com/photos/280229/pexels-photo-280229.jpeg?auto=compress&cs=tinysrgb&w=600",
     title: "Apartment - Bloomfields",
     location: "Mostakbal City, Egypt",
@@ -212,6 +230,7 @@ export const resaleUnits = [
 
 export const area = [
   {
+    id : 1,
     img: "https://prod-images.cooingestate.com/processed/area/image/2/high.webp",
     title: "New Cairo",
     number: 12,
@@ -224,6 +243,7 @@ export const area = [
 
   },
   {
+    id : 2,
     img: "https://prod-images.cooingestate.com/processed/area/image/1/high.webp",
     title: "6th of October City",
     number: 12,
@@ -235,6 +255,7 @@ export const area = [
 
   },
   {
+    id : 3,
     img: "https://prod-images.cooingestate.com/processed/area/image/9/high.webp",
     title: "New Capital City",
     number: 12,
@@ -246,6 +267,7 @@ export const area = [
 
   },
   {
+    id : 4 ,
     img: "https://prod-images.cooingestate.com/processed/area/image/10/high.webp",
     title: "Mostakbal City",
     number: 12,
@@ -258,6 +280,7 @@ export const area = [
 
   },
   {
+    id : 5,
     img: "https://prod-images.cooingestate.com/processed/area/image/4/high.webp",
     title: "Ain Sokhna",
     number: 12,
@@ -270,6 +293,7 @@ export const area = [
 
   },
   {
+    id : 6,
     img: "https://prod-images.cooingestate.com/processed/area/image/3/high.webp",
     title: "North Coast - Sahel ",
     number: 12,
@@ -282,6 +306,7 @@ export const area = [
 
   },
   {
+    id : 7,
     img: "https://prod-images.cooingestate.com/processed/area/image/5/high.webp",
     title: "El Gouna",
     number: 12,
@@ -293,6 +318,7 @@ export const area = [
 
 
   }, {
+    id : 8,
     img: "https://prod-images.cooingestate.com/processed/compound_image/image/1078/high.webp",
     title: "New Heliopolis",
     number: 12,

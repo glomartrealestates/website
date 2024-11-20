@@ -8,8 +8,12 @@ import { FaWhatsapp } from "react-icons/fa6"
 import { MdOutlineBedroomChild } from "react-icons/md"
 import { CiLocationOn } from "react-icons/ci";
 import { HiMiniCurrencyDollar } from "react-icons/hi2";
+import { useRouter } from "next/navigation";
+
 
 export default function Component() {
+  let router = useRouter()
+
     const [units, setUnits] = useState([])
     const fetchData = async()=>{
         const {properties, totalProperties} = await getAllProperties();
@@ -23,7 +27,10 @@ export default function Component() {
     <div className="container mx-auto p-4">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {units.map((property) => (
-          <div key={property.id} className="bg-white rounded-lg shadow-md overflow-hidden">
+          <div key={property.$id} onClick={()=>{
+
+            router.push(`/home/area/${property.$id}`)
+          }} className="bg-white rounded-lg shadow-md overflow-hidden">
             <div className="relative">
               <img src={property.image || "/images/contact-background.webp"} alt={property.name} className="w-full h-48 object-cover" />
               <Badge className="absolute top-2 left-2 bg-red-500 text-white">For sell</Badge>

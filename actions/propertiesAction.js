@@ -27,3 +27,17 @@ export const getAllProperties = async (limit = 10, offset = 0) => {
       throw error;
     }
   };
+
+  export const getPropertyById = async (propertyId) => {
+    try {
+      const response = await databases.getDocument(
+        process.env.NEXT_PUBLIC_DATABASE_ID,
+        process.env.NEXT_PUBLIC_PROPERTIES,
+        propertyId
+      );
+      return response;
+    } catch (error) {
+      console.error('Error fetching property:', error);
+      throw error;
+    }
+  };

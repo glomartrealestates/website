@@ -19,8 +19,13 @@ import { MdKeyboardArrowRight } from "react-icons/md";
 import { FreeMode, Pagination, Navigation } from "swiper/modules";
 import { Grid } from "@mui/material";
 import Card from "../card/Cards";
+import { useRouter } from "next/navigation";
 
-export default function App({ data  , h1}) {
+
+
+export default function App({ data, h1 }) {
+  let router = useRouter()
+
   return (
     <div>
       <Grid container className="flex justify-center">
@@ -59,8 +64,12 @@ export default function App({ data  , h1}) {
               }}
             >
               {data.map((ele, index) => (
-                <SwiperSlide key={index}>
-                  <Card property={ele} />
+                <SwiperSlide key={index} onClick={()=>{
+
+                  router.push(`/home/area/${ele.id}`)
+                }}>
+
+                  <Card property={ele}  />
                 </SwiperSlide>
               ))}
             </Swiper>
