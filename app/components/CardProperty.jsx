@@ -6,9 +6,12 @@ import { HiMiniCurrencyDollar } from "react-icons/hi2";
 import { Heart, Home, Share2, Phone } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { useRouter } from "next/navigation";
+
 function CardProperty({ property }) {
+    const router = useRouter()
   return (
-    <div className="bg-white rounded-lg shadow-md overflow-hidden">
+    <div className="bg-white rounded-lg shadow-md overflow-hidden" onClick={()=>router.push(`/home/area/${property.$id}`)}>
       <div className="relative">
         <img
           src={property?.propertyImage[0] || "/images/contact-background.webp"}
